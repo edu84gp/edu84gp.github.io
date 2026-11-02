@@ -14,7 +14,7 @@ Comprobación realizada el 2026-11-02 con peticiones HEAD.
 | Perfil de GitHub | https://github.com/edu84gp | 200 |
 | LinkedIn | https://www.linkedin.com/in/edu84gp/ | 403 a peticiones automáticas; correcto en navegador |
 | Email | mailto:edu84gp@gmail.com | No se comprueba con HEAD |
-| Portfolio | https://edu84gp.github.io/ | Pendiente de publicar |
+| Portfolio | https://edu84gp.github.io/ | 200; publica el README hasta que exista `index.html` |
 
 ## Notas
 

@@ -30,12 +30,13 @@ Carpeta de trabajo del portfolio personal, preparada con la estructura del futur
 ## Estado
 
 - Fase 0 completada: fichas, enlaces comprobados, sistema visual, capturas y foto preparados.
-- Repositorio de GitHub pendiente de crear y primer commit pendiente de subir.
+- Repositorio `edu84gp.github.io` creado, público, con `main` como rama por defecto y primer commit subido.
+- GitHub Pages activado automáticamente desde `main` y la raíz, con HTTPS forzado.
+- Mientras no exista `index.html`, Pages publica el `README.md` como portada y sirve `docs/` en crudo.
 
 ## Pendiente para la fase 1
 
-- Crear el repositorio público `edu84gp.github.io`.
-- Inicializar Git en esta carpeta y publicar en `main`.
 - Montar `index.html`, `assets/css/style.css`, `assets/js/main.js` y `favicon.svg`.
+- Decidir si `docs/` se excluye de la publicación o se deja como documentación del repositorio.
 - Convertir las capturas a WebP de 1200×750 y crear el diagrama SVG del Copilot.
 - Redactar el texto final del hero y de las cuatro fichas.
