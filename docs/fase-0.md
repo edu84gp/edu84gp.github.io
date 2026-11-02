@@ -32,7 +32,7 @@ Carpeta de trabajo del portfolio personal, preparada con la estructura del futur
 - Fase 0 completada: fichas, enlaces comprobados, sistema visual, capturas y foto preparados.
 - Repositorio `edu84gp.github.io` creado, público, con `main` como rama por defecto y primer commit subido.
 - GitHub Pages activado automáticamente desde `main` y la raíz, con HTTPS forzado.
-- Mientras no exista `index.html`, Pages publica el `README.md` como portada y sirve `docs/` en crudo.
+- GitHub no permite despublicar un sitio de usuario. Se acordó no tocar nada: hasta la fase 1, Pages publica el `README.md` como portada y sirve `docs/` en crudo.
 
 ## Pendiente para la fase 1
 
