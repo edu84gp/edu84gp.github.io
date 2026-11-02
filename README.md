@@ -1,10 +1,22 @@
-# Portfolio de Eduardo García Prieto
+# edu84gp.github.io
 
-Sitio personal de portfolio: desarrollador Full Stack Junior con React, Node.js, SQL e IA aplicada.
+Portfolio personal de Eduardo García Prieto, desarrollador Full Stack Junior.
 
-- URL prevista: https://edu84gp.github.io/
-- Estado: fase 0 completada. La página se monta en la fase 1.
-- `assets/img/`: capturas de los proyectos y foto de perfil.
-- `docs/`: fichas de proyectos, enlaces y sistema visual.
+- URL: https://edu84gp.github.io/
+- Página estática en HTML, CSS y JavaScript, sin build.
+- Tema claro y oscuro automático según la preferencia del sistema.
+- `assets/img/`: capturas en WebP, foto, icono e imagen social.
+- `assets/css/style.css`: sistema visual completo.
+- `docs/`: documentación de trabajo, excluida de la publicación con `_config.yml`.
 
-El sitio será una página estática en HTML, CSS y JavaScript, sin build, con tema claro y oscuro automático.
+## Desarrollo local
+
+Abrir `index.html` en el navegador o servir la raíz del repositorio:
+
+```bash
+python -m http.server 8000
+```
+
+## Publicación
+
+GitHub Pages publica la rama `main` desde la raíz. No hay paso de compilación.

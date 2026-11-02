@@ -1,0 +1,8 @@
+title: "Eduardo García Prieto"
+description: "Portfolio de Eduardo García Prieto, desarrollador Full Stack Junior."
+url: "https://edu84gp.github.io"
+lang: es
+exclude:
+  - docs
+  - README.md
+  - _working

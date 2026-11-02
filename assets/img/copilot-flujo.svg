@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 1000" role="img" aria-labelledby="titulo descripcion">
+  <title id="titulo">Flujo de AI Job Search Copilot</title>
+  <desc id="descripcion">Seis pasos: oferta, análisis de encaje, CV adaptado, carta y email, registro en SQLite y preparación de la entrevista. El sistema reúne 15 agentes, 10 MCPs, 20 comandos y 14 skills.</desc>
+  <rect width="640" height="1000" rx="18" fill="#0b1120"/>
+  <text x="32" y="52" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="26" font-weight="700" fill="#f9fafb">De una oferta a una candidatura</text>
+  <text x="32" y="82" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#9ca3af">Un flujo reproducible con agentes y MCPs</text>
+
+  <g>
+    <rect x="32" y="120" width="576" height="96" rx="14" fill="#111827" stroke="#1f2937"/>
+    <circle cx="76" cy="168" r="18" fill="#2563eb"/>
+    <text x="76" y="174" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#ffffff">1</text>
+    <text x="112" y="162" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="600" fill="#f9fafb">Oferta</text>
+    <text x="112" y="188" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#9ca3af">URL o texto de la vacante</text>
+  </g>
+  <path d="M320 240 L320 254" stroke="#2563eb" stroke-width="3"/>
+  <path d="M313 249 L320 257 L327 249" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g>
+    <rect x="32" y="264" width="576" height="96" rx="14" fill="#111827" stroke="#1f2937"/>
+    <circle cx="76" cy="312" r="18" fill="#2563eb"/>
+    <text x="76" y="318" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#ffffff">2</text>
+    <text x="112" y="306" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="600" fill="#f9fafb">Análisis de encaje</text>
+    <text x="112" y="332" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#9ca3af">Requisitos, huecos y prioridad</text>
+  </g>
+  <path d="M320 384 L320 398" stroke="#2563eb" stroke-width="3"/>
+  <path d="M313 393 L320 401 L327 393" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g>
+    <rect x="32" y="408" width="576" height="96" rx="14" fill="#111827" stroke="#1f2937"/>
+    <circle cx="76" cy="456" r="18" fill="#2563eb"/>
+    <text x="76" y="462" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#ffffff">3</text>
+    <text x="112" y="450" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="600" fill="#f9fafb">CV adaptado</text>
+    <text x="112" y="476" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#9ca3af">Palabras clave con evidencia</text>
+  </g>
+  <path d="M320 528 L320 542" stroke="#2563eb" stroke-width="3"/>
+  <path d="M313 537 L320 545 L327 537" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g>
+    <rect x="32" y="552" width="576" height="96" rx="14" fill="#111827" stroke="#1f2937"/>
+    <circle cx="76" cy="600" r="18" fill="#2563eb"/>
+    <text x="76" y="606" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#ffffff">4</text>
+    <text x="112" y="594" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="600" fill="#f9fafb">Carta y email</text>
+    <text x="112" y="620" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#9ca3af">Texto alineado a la oferta</text>
+  </g>
+  <path d="M320 672 L320 686" stroke="#2563eb" stroke-width="3"/>
+  <path d="M313 681 L320 689 L327 681" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g>
+    <rect x="32" y="696" width="576" height="96" rx="14" fill="#111827" stroke="#1f2937"/>
+    <circle cx="76" cy="744" r="18" fill="#2563eb"/>
+    <text x="76" y="750" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#ffffff">5</text>
+    <text x="112" y="738" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="600" fill="#f9fafb">Registro en SQLite</text>
+    <text x="112" y="764" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#9ca3af">Estado y seguimiento único</text>
+  </g>
+  <path d="M320 816 L320 830" stroke="#2563eb" stroke-width="3"/>
+  <path d="M313 825 L320 833 L327 825" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g>
+    <rect x="32" y="840" width="576" height="96" rx="14" fill="#111827" stroke="#1f2937"/>
+    <circle cx="76" cy="888" r="18" fill="#2563eb"/>
+    <text x="76" y="894" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="700" fill="#ffffff">6</text>
+    <text x="112" y="882" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="600" fill="#f9fafb">Preparación</text>
+    <text x="112" y="908" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#9ca3af">Preguntas y banco STAR</text>
+  </g>
+
+  <rect x="32" y="956" width="576" height="32" rx="16" fill="#1e3a8a"/>
+  <text x="320" y="977" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13" fill="#93c5fd">15 agentes · 10 MCPs · 20 comandos · 14 skills</text>
+</svg>
