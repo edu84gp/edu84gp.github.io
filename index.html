@@ -80,12 +80,12 @@
         <div class="hero__text">
           <p class="eyebrow">Desarrollador Full Stack Junior</p>
           <h1 id="hero-titulo">Eduardo García Prieto</h1>
-          <p class="hero__lead">Construyo aplicaciones web con React, Node.js y SQL, y aplico IA a problemas concretos: extracción de perfiles, matching de ofertas y generación de documentos adaptados.</p>
-          <p class="hero__meta">Palencia, España · Remoto, híbrido o presencial · Disponibilidad inmediata</p>
+          <p class="hero__lead">Construyo aplicaciones web con React, Node.js, SQL e integración de IA.</p>
+          <p class="hero__meta">Palencia, España</p>
           <div class="hero__actions">
             <a class="button button--primary" href="mailto:edu84gp@gmail.com">Escríbeme</a>
             <a class="button button--secondary" href="https://www.linkedin.com/in/edu84gp/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
-            <a class="link-arrow" href="https://github.com/edu84gp" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+            <a class="button button--secondary" href="https://github.com/edu84gp" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
           </div>
         </div>
         <div class="hero__photo">
@@ -102,23 +102,23 @@
 
         <div class="projects">
           <article class="project" aria-labelledby="aplika-titulo">
+            <p class="project__index">Proyecto 01 · Full Stack e IA</p>
+            <h3 id="aplika-titulo">Aplika Jobs</h3>
             <div class="project__media">
               <img src="/assets/img/aplika-panel.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Panel de Aplika Jobs con columnas de candidaturas, tarjetas de ofertas y porcentajes de compatibilidad.">
             </div>
             <div class="project__body">
-              <p class="project__index">Proyecto 01 · Full Stack e IA</p>
-              <h3 id="aplika-titulo">Aplika Jobs</h3>
-              <p class="project__lead">Plataforma que reúne ofertas, mide su encaje con IA y prepara el CV, la carta y el email de cada candidatura.</p>
+              <p class="project__lead">Plataforma que automatiza la búsqueda de empleo con inteligencia artificial: reúne las ofertas y prepara tu CV y carta para cada candidatura.</p>
 
               <div class="project__block">
                 <h4>Problema</h4>
-                <p>Las ofertas se reparten entre portales, alertas y newsletters. Adaptar el CV y la carta a cada una consume tiempo y se hace sin saber qué palabras clave busca el filtro ATS.</p>
+                <p>Buscar empleo termina siendo un proceso largo y tedioso. Cada día accedes a varios portales, buscas entre cientos de ofertas y envías tu CV sin saber si lo leerá una persona o será descartado por un filtro ATS.</p>
               </div>
 
               <div class="project__block">
                 <h4>Qué hice</h4>
                 <ul>
-                  <li>API REST con Express 5 y TypeScript estricto, validación con Zod y errores tipados.</li>
+                  <li>API REST con Express 5 y TypeScript, validación con Zod y errores tipados.</li>
                   <li>Persistencia con PostgreSQL, Supabase y Prisma 7, con migraciones y transacciones en las operaciones sensibles.</li>
                   <li>Motor de búsqueda con JSearch, deduplicación, caducidad y persistencia por lotes.</li>
                   <li>Orquestador de matching con umbral configurable, reintentos y creación de candidaturas.</li>
@@ -152,20 +152,20 @@
               </ul>
 
               <p class="project__links">
-                <a href="https://aplika-jobs.vercel.app/" target="_blank" rel="noopener noreferrer">Demo<span class="visually-hidden"> de Aplika Jobs (se abre en una pestaña nueva)</span></a>
-                <a href="https://github.com/edu84gp/aplika-jobs-case-study" target="_blank" rel="noopener noreferrer">Caso de estudio<span class="visually-hidden"> de Aplika Jobs (se abre en una pestaña nueva)</span></a>
+                <a href="https://aplika-jobs.vercel.app/" target="_blank" rel="noopener noreferrer">Demo<span class="visually-hidden"> de Aplika Jobs</span><span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+                <a href="https://github.com/edu84gp/aplika-jobs-case-study" target="_blank" rel="noopener noreferrer">Caso de estudio<span class="visually-hidden"> de Aplika Jobs</span><span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
               </p>
               <p class="project__note">Proyecto en equipo con Roberto Antonio López. Código privado; el caso de estudio documenta la arquitectura y las decisiones.</p>
             </div>
           </article>
 
           <article class="project project--diagram" aria-labelledby="copilot-titulo">
+            <p class="project__index">Proyecto 02 · Agentes e IA</p>
+            <h3 id="copilot-titulo">AI Job Search Copilot</h3>
             <div class="project__media">
               <img src="/assets/img/copilot-flujo.svg" width="640" height="1000" loading="lazy" decoding="async" alt="Diagrama de seis pasos: oferta, análisis de encaje, CV adaptado, carta y email, registro en SQLite y preparación de la entrevista.">
             </div>
             <div class="project__body">
-              <p class="project__index">Proyecto 02 · Agentes e IA</p>
-              <h3 id="copilot-titulo">AI Job Search Copilot</h3>
               <p class="project__lead">Sistema de agentes sobre opencode que convierte una oferta en un flujo reproducible: análisis, CV adaptado, carta, registro y preparación de la entrevista.</p>
 
               <div class="project__block">
@@ -191,7 +191,7 @@
 
               <div class="project__block">
                 <h4>Aprendizaje</h4>
-                <p>Diseño de agentes con mínimo privilegio, separación entre instrucciones y herramientas, reproducibilidad y automatización con control humano.</p>
+                <p>Diseño de agentes con privilegios limitados, separación entre instrucciones y herramientas, reproducibilidad y automatización con control humano.</p>
               </div>
 
               <ul class="tags" aria-label="Stack de AI Job Search Copilot">
@@ -205,19 +205,19 @@
               </ul>
 
               <p class="project__links">
-                <a href="https://github.com/edu84gp/ai-job-search-copilot" target="_blank" rel="noopener noreferrer">Repositorio<span class="visually-hidden"> de AI Job Search Copilot (se abre en una pestaña nueva)</span></a>
+                <a href="https://github.com/edu84gp/ai-job-search-copilot" target="_blank" rel="noopener noreferrer">Repositorio<span class="visually-hidden"> de AI Job Search Copilot</span><span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
               </p>
             </div>
           </article>
 
           <article class="project" aria-labelledby="pokedex-titulo">
+            <p class="project__index">Proyecto 03 · Frontend sin framework</p>
+            <h3 id="pokedex-titulo">Pokédex Web</h3>
             <div class="project__media">
               <img src="/assets/img/pokedex-demo.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Grid de la Pokédex con tarjetas de Pokémon, buscador, filtros por tipo y paginación.">
             </div>
             <div class="project__body">
-              <p class="project__index">Proyecto 03 · Frontend sin framework</p>
-              <h3 id="pokedex-titulo">Pokédex Web</h3>
-              <p class="project__lead">Pokédex que consume la PokéAPI y muestra 1025 Pokémon en un grid paginado con ficha de detalle.</p>
+              <p class="project__lead">Pokédex que consume la PokéAPI y muestra todos los Pokémon en un grid paginado con ficha de detalle.</p>
 
               <div class="project__block">
                 <h4>Problema</h4>
@@ -228,7 +228,7 @@
                 <h4>Qué hice</h4>
                 <ul>
                   <li>Módulos separados de API, interfaz y controlador.</li>
-                  <li>30 Pokémon por página y 35 páginas, con peticiones en paralelo mediante <code>Promise.all</code>.</li>
+                  <li>30 Pokémon por página y paginación calculada con el total que devuelve la PokéAPI, con peticiones en paralelo mediante <code>Promise.all</code>.</li>
                   <li>Modal de detalle con estadísticas, habilidades y tipos.</li>
                   <li>Color por tipo, diseño responsive y manejo de errores.</li>
                 </ul>
@@ -236,7 +236,7 @@
 
               <div class="project__block">
                 <h4>Resultado</h4>
-                <p>La demo pública recorre los 1025 Pokémon en 35 páginas, con ficha de detalle. El README documenta la arquitectura y el flujo de datos. Quedan pendientes buscador, favoritos y pruebas automatizadas.</p>
+                <p>La demo pública recorre todos los Pokémon de la PokéAPI, con ficha de detalle. El README documenta la arquitectura y el flujo de datos.</p>
               </div>
 
               <div class="project__block">
@@ -253,20 +253,20 @@
               </ul>
 
               <p class="project__links">
-                <a href="https://edu84gp.github.io/pokedex_web/" target="_blank" rel="noopener noreferrer">Demo<span class="visually-hidden"> de Pokédex Web (se abre en una pestaña nueva)</span></a>
-                <a href="https://github.com/edu84gp/pokedex_web" target="_blank" rel="noopener noreferrer">Repositorio<span class="visually-hidden"> de Pokédex Web (se abre en una pestaña nueva)</span></a>
+                <a href="https://edu84gp.github.io/pokedex_web/" target="_blank" rel="noopener noreferrer">Demo<span class="visually-hidden"> de Pokédex Web</span><span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+                <a href="https://github.com/edu84gp/pokedex_web" target="_blank" rel="noopener noreferrer">Repositorio<span class="visually-hidden"> de Pokédex Web</span><span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
               </p>
               <p class="project__note">Datos e imágenes de PokéAPI, Nintendo, Creatures Inc. y GAME FREAK. Código MIT.</p>
             </div>
           </article>
 
           <article class="project" aria-labelledby="juego-titulo">
+            <p class="project__index">Proyecto 04 · Algoritmos y accesibilidad</p>
+            <h3 id="juego-titulo">El Juego de la Vida</h3>
             <div class="project__media">
               <img src="/assets/img/juego-demo.webp" width="1200" height="750" loading="lazy" decoding="async" alt="Tablero de El Juego de la Vida con un patrón aleatorio de células vivas y los controles de velocidad.">
             </div>
             <div class="project__body">
-              <p class="project__index">Proyecto 04 · Algoritmos y accesibilidad</p>
-              <h3 id="juego-titulo">El Juego de la Vida</h3>
               <p class="project__lead">Simulador del autómata de Conway en JavaScript vanilla, con tablero configurable, edición de células y navegación por teclado.</p>
 
               <div class="project__block">
@@ -304,8 +304,8 @@
               </ul>
 
               <p class="project__links">
-                <a href="https://edu84gp.github.io/el-juego-de-la-vida/" target="_blank" rel="noopener noreferrer">Demo<span class="visually-hidden"> de El Juego de la Vida (se abre en una pestaña nueva)</span></a>
-                <a href="https://github.com/edu84gp/el-juego-de-la-vida" target="_blank" rel="noopener noreferrer">Repositorio<span class="visually-hidden"> de El Juego de la Vida (se abre en una pestaña nueva)</span></a>
+                <a href="https://edu84gp.github.io/el-juego-de-la-vida/" target="_blank" rel="noopener noreferrer">Demo<span class="visually-hidden"> de El Juego de la Vida</span><span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+                <a href="https://github.com/edu84gp/el-juego-de-la-vida" target="_blank" rel="noopener noreferrer">Repositorio<span class="visually-hidden"> de El Juego de la Vida</span><span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
               </p>
             </div>
           </article>
@@ -322,8 +322,8 @@
         <div class="practices">
           <article class="practice">
             <h3>Decisiones documentadas</h3>
-            <p>Cada proyecto deja el porqué de las decisiones, no solo el resultado. En el Copilot hay un registro fechado y un CHANGELOG que explica qué cambió y por qué.</p>
-            <a href="https://github.com/edu84gp/ai-job-search-copilot/blob/main/docs/memoria/decisiones.md" target="_blank" rel="noopener noreferrer">Ver el registro<span class="visually-hidden"> de decisiones (se abre en una pestaña nueva)</span></a>
+            <p>Cada proyecto documenta por qué se tomaron las decisiones, no solo el resultado. En el Copilot hay un registro fechado y un CHANGELOG que explica qué cambió y por qué.</p>
+            <a href="https://github.com/edu84gp/ai-job-search-copilot/blob/main/docs/memoria/decisiones.md" target="_blank" rel="noopener noreferrer">Ver el registro<span class="visually-hidden"> de decisiones</span><span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
           </article>
           <article class="practice">
             <h3>Permisos mínimos</h3>
@@ -338,7 +338,7 @@
           <article class="practice">
             <h3>Accesibilidad desde el inicio</h3>
             <p>Teclado, foco visible y contraste en los dos temas. El Juego de la Vida usa <code>role="grid"</code>, roving tabindex y una región de estado.</p>
-            <a href="https://github.com/edu84gp/el-juego-de-la-vida" target="_blank" rel="noopener noreferrer">Ver el proyecto<span class="visually-hidden"> El Juego de la Vida (se abre en una pestaña nueva)</span></a>
+            <a href="https://github.com/edu84gp/el-juego-de-la-vida" target="_blank" rel="noopener noreferrer">Ver el proyecto<span class="visually-hidden"> El Juego de la Vida</span><span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
           </article>
         </div>
       </div>
