@@ -46,5 +46,5 @@ Página completa montada sobre la estructura de la fase 0. No se ha publicado to
 
 ## Estado
 
-- Commit local `5ad8c9c`.
+- Commit local `4981b81`.
 - Sin push y sin publicación hasta que la persona apruebe la página.
