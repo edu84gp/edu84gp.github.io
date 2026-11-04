@@ -28,7 +28,7 @@ Página completa montada sobre la estructura de la fase 0. No se ha publicado to
 - Favicon B, dos chevrones. A 16 px el monograma EG perdía las letras.
 - Las capturas se redimensionan con recorte centrado para mantener la proporción 8:5; las barras de scroll se recortan antes.
 - La foto baja de PNG a WebP: de 1,3 MB a 23 KB. El nuevo retrato incluye la cabeza completa y se recorta dentro del círculo original para eliminar el halo.
-- Cada ficha lleva el índice arriba a la izquierda y el título arriba a la derecha. En anchos de 900 px o menos, ambos se apilan encima de la imagen.
+- Cada ficha lleva el índice arriba a la izquierda y el título arriba a la derecha, centrado sobre su columna. En anchos de 900 px o menos, ambos se apilan encima de la imagen.
 - El texto se pasó por `li-human`: 79,9 sobre 100, PASS, sin términos del lexicón. Se corrigieron «envias», «Pokémons» y la grafía de PokéAPI, y se unificó «opencode» en minúsculas.
 - Los enlaces externos conservan el aviso oculto de pestaña nueva para lectores de pantalla.
 - El diagrama del Copilot es vertical para que se lea mejor en móvil.
@@ -37,7 +37,8 @@ Página completa montada sobre la estructura de la fase 0. No se ha publicado to
 - La cabecera es fija con `position: sticky`, fondo translúcido y `backdrop-filter`. `scroll-padding-top: 88px` evita que el menú tape el destino de los anclajes, y la imagen de cada ficha se detiene a 88 px.
 - El enlace de salto sube a `z-index: 30` para quedar por encima de la cabecera fija cuando recibe el foco.
 - En anchos de 480 px o menos se oculta el menú, que solo conserva el botón de contacto, para dejar sitio al selector de tema sin romper la cabecera.
-- Los efectos de hover de la persona se mantienen, pero `transition: all` pasa a propiedades concretas y el bloque de movimiento reducido anula los `transform`.
+- Los efectos de hover se suavizan: la foto escala 1,05 en 200 ms y la tarjeta cambia de fondo y sombra sin desplazarse. El bloque de movimiento reducido anula el `transform` de la foto.
+- La entradilla de Proyectos enlaza a los repositorios de GitHub con el aviso oculto de pestaña nueva.
 
 ## Comprobaciones
 

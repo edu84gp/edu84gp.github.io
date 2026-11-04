@@ -332,11 +332,11 @@ h1 {
   border: 1px solid var(--border);
   border-radius: 50%;
   object-fit: cover;
-  transition: transform 2s;
+  transition: transform 200ms ease;
 }
 
 .hero__photo img:hover {
-  transform: scale(1.3);
+  transform: scale(1.05);
 }
 
 
@@ -424,14 +424,12 @@ h2 {
   background: var(--surface);
   transition:
     background-color 200ms ease,
-    box-shadow 200ms ease,
-    transform 200ms ease;
+    box-shadow 200ms ease;
 }
 
 .project:hover {
   background: var(--surface-hover);
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px var(--shadow);
+  box-shadow: 0 8px 24px var(--shadow);
 }
 
 .project__index {
@@ -752,8 +750,7 @@ h2 {
     transition-duration: 0.01ms !important;
   }
 
-  .hero__photo img:hover,
-  .project:hover {
+  .hero__photo img:hover {
     transform: none;
   }
 }
