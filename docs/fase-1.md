@@ -1,6 +1,6 @@
 # Portfolio: fase 1
 
-Página completa montada sobre la estructura de la fase 0. No se ha publicado todavía.
+Página completa publicada sobre la estructura de la fase 0 en `https://edu84gp.github.io/`.
 
 Actualizada el 2026-11-04.
 
@@ -62,8 +62,11 @@ Actualizada el 2026-11-04.
 - HTML válido en el validador del W3C: 0 mensajes.
 - CSS sin errores de sintaxis con stylelint 18 y una configuración vacía.
 - Los enlaces externos devuelven 200, salvo LinkedIn, que responde 999 a peticiones automatizadas y se comprobó en el navegador con la sesión abierta.
+- Publicada con el build `8b98ac7` de `main`: la URL responde 200 y carga CSS, JavaScript, fotos, diagrama, favicon, robots y sitemap sin errores de consola ni peticiones fallidas. `README.md` y `docs/fase-1.md` devuelven 404 por la exclusión de `_config.yml`.
+- Post Inspector de LinkedIn: vista previa con título, descripción e imagen correctos. Author y Publish date aparecen vacíos porque son campos de artículo y la página es un sitio, no una publicación.
 
 ## Estado
 
-- Código en el commit local `bb1a699`.
-- Publicación aprobada el 2026-11-04. El push a `main` publica la página; después se comprueba la URL, se actualiza el `lastmod` del sitemap si hace falta y se ejecuta el Post Inspector de LinkedIn.
+- Código en el commit `bb1a699`; documentación en `8b98ac7`; ambos publicados en `main`.
+- Publicada el 2026-11-04 en `https://edu84gp.github.io/`. El build de GitHub Pages terminó en estado `built` a las 09:29 UTC.
+- El Post Inspector se ejecutó sobre la URL pública; no se pedirá re-scrape salvo que cambien los metadatos sociales.
