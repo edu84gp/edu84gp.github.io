@@ -19,7 +19,7 @@ Actualizada el 2026-11-04.
 - `assets/img/aplika-panel.webp`, `pokedex-demo.webp`, `juego-demo.webp`: capturas a 1200×750 y calidad 82.
 - `assets/img/copilot-flujo.svg`: diagrama vertical de seis pasos.
 - `assets/img/foto-perfil.webp`: retrato recortado a 480 px y 23 KB, mostrado a 120. Sustituye al recorte anterior, que cortaba la cabeza.
-- `assets/img/og-image.png`: tarjeta social de 1200×630.
+- `assets/img/og-image-2026-11.png`: tarjeta social de 1200×630 y 33 KB.
 - `assets/img/apple-touch-icon.png` y `favicon.ico`: iconos de 180 px y multi-tamaño.
 - `favicon.svg`: chevrones blancos sobre el azul del acento.
 - `_config.yml`: excluye `docs/`, `README.md` y `_working` de la publicación.
@@ -47,11 +47,12 @@ Actualizada el 2026-11-04.
 - Los efectos de hover se suavizan: la foto escala 1,05 en 200 ms y la tarjeta cambia de fondo y sombra sin desplazarse. El bloque de movimiento reducido anula el `transform` de la foto.
 - Los tokens de hover se ajustan: `--surface-hover` pasa a `#f5f5f5` y `--shadow` a `rgba(198, 199, 202, 0.35)` en claro; en oscuro se mantienen `#141c2e` y `rgba(64, 85, 116, 0.35)`. El botón secundario usa `--accent-soft` de fondo, `--accent-strong` de texto y `--accent` de borde; el contraste es 5,5:1 en claro y 5,7:1 en oscuro. Las tarjetas de método replican el hover de las fichas de proyecto con fondo y sombra. El `transition: all` de `.practice` se limita a `background-color` y `box-shadow`.
 - La entradilla de Proyectos enlaza a los repositorios de GitHub con el aviso oculto de pestaña nueva.
+- La tarjeta social se reconstruyó en HTML y se capturó a 1200×630 con los tokens del sitio: nombre a 76 px, rol a 44 px y stack a 34 px. Se eliminó la línea `edu84gp.github.io` porque LinkedIn ya muestra el dominio bajo el título y a tamaño de feed era ilegible. El archivo pasó a `og-image-2026-11.png`: el CDN de LinkedIn conserva la imagen anterior por URL y el re-scrape seguía devolviendo la tarjeta vieja, así que cada cambio de imagen usará un nombre nuevo.
 
 ## Comprobaciones
 
-- Lighthouse 13.6.0 móvil y escritorio: 100 en rendimiento, accesibilidad, buenas prácticas y SEO.
-- LCP de 0,9 s en móvil y 0,2 s en escritorio; CLS 0; TBT 0 ms.
+- Lighthouse 13.6.0 en vivo, móvil y escritorio: 100 en rendimiento, accesibilidad, buenas prácticas, SEO y navegación agéntica.
+- LCP de 1,1 s en móvil y 0,4 s en escritorio; CLS 0; TBT 0 ms.
 - Sin scroll horizontal en 320, 360, 390, 480, 720, 721, 768 y 1440. A 720 px o menos la foto, el eyebrow y el `h1` están centrados; a 721 px la foto vuelve a la columna derecha y el texto a la izquierda. A 390 px la foto queda por encima del titular y los botones por debajo.
 - El botón secundario muestra el tinte de acento en el hero y en contacto, en claro y en oscuro; el texto mantiene 5,5:1 y 5,7:1 de contraste.
 - Navegación con teclado y foco visible; el primer Tab enfoca «Saltar al contenido» y Enter lleva el foco a `main` (`activeElement` = `contenido`). El selector de tema muestra un contorno de 3 px.
@@ -62,11 +63,13 @@ Actualizada el 2026-11-04.
 - HTML válido en el validador del W3C: 0 mensajes.
 - CSS sin errores de sintaxis con stylelint 18 y una configuración vacía.
 - Los enlaces externos devuelven 200, salvo LinkedIn, que responde 999 a peticiones automatizadas y se comprobó en el navegador con la sesión abierta.
-- Publicada con el build `8b98ac7` de `main`: la URL responde 200 y carga CSS, JavaScript, fotos, diagrama, favicon, robots y sitemap sin errores de consola ni peticiones fallidas. `README.md` y `docs/fase-1.md` devuelven 404 por la exclusión de `_config.yml`.
-- Post Inspector de LinkedIn: vista previa con título, descripción e imagen correctos. Author y Publish date aparecen vacíos porque son campos de artículo y la página es un sitio, no una publicación.
+- Publicada desde `main`: la URL y los recursos responden 200 (HTML, CSS, JavaScript, tarjeta social, robots y sitemap). `README.md`, `docs/fase-1.md` y `_working/` devuelven 404 por la exclusión de `_config.yml`.
+- El HTML declara `og:image:type` como `image/png`, `og:image:width` y `og:image:height`, `twitter:card` como `summary_large_image` y `twitter:image:alt`.
+- Post Inspector de LinkedIn: título, descripción e imagen correctos, y la tarjeta nueva aparece en la vista previa tras el re-scrape. Author y Publish date aparecen vacíos porque son campos de artículo y la página es un sitio, no una publicación.
+- Rastreadores: `Twitterbot`, `facebookexternalhit` y `LinkedInBot` reciben las nueve etiquetas sociales y la imagen responde 200 como `image/png` de 33 KB. Los validadores oficiales de X y Facebook exigen sesión iniciada, así que no se pudieron ejecutar sin cuenta.
 
 ## Estado
 
-- Código en el commit `bb1a699`; documentación en `8b98ac7`; ambos publicados en `main`.
-- Publicada el 2026-11-04 en `https://edu84gp.github.io/`. El build de GitHub Pages terminó en estado `built` a las 09:29 UTC.
-- El Post Inspector se ejecutó sobre la URL pública; no se pedirá re-scrape salvo que cambien los metadatos sociales.
+- Tarjeta social y metadatos en `796490d`; renombrado para invalidar la caché en `040ae98`; ambos publicados en `main`.
+- Publicada el 2026-11-04 en `https://edu84gp.github.io/`. El build de GitHub Pages terminó en estado `built`.
+- El Post Inspector se re-ejecutó tras el cambio de imagen: la vista previa ya muestra la tarjeta nueva. No se pedirá otro re-scrape salvo que cambien los metadatos sociales.
