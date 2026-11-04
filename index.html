@@ -7,8 +7,21 @@
   <meta name="description" content="Portfolio de Eduardo García Prieto, desarrollador Full Stack Junior en Palencia. Proyectos con React, Node.js, SQL e IA aplicada, con demo y repositorio.">
   <link rel="canonical" href="https://edu84gp.github.io/">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f7f8fa">
+  <script>
+    (() => {
+      let saved = null;
+      try {
+        saved = localStorage.getItem("tema");
+      } catch (error) {
+        saved = null;
+      }
+      const dark = saved === "dark" || (saved !== "light" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+      const theme = dark ? "dark" : "light";
+      document.documentElement.dataset.theme = theme;
+      document.querySelector('meta[name="theme-color"]').content = dark ? "#0b1120" : "#f7f8fa";
+    })();
+  </script>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
@@ -64,13 +77,24 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="brand" href="#inicio">Eduardo García Prieto</a>
-      <nav aria-label="Principal">
-        <ul class="nav">
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#como-trabajo">Cómo trabajo</a></li>
-          <li><a class="nav__contact" href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
+      <div class="site-header__actions">
+        <nav aria-label="Principal">
+          <ul class="nav">
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#como-trabajo">Cómo trabajo</a></li>
+            <li><a class="nav__contact" href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Cambiar a tema oscuro" title="Cambiar a tema oscuro">
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -81,7 +105,7 @@
           <p class="eyebrow">Desarrollador Full Stack Junior</p>
           <h1 id="hero-titulo">Eduardo García Prieto</h1>
           <p class="hero__lead">Construyo aplicaciones web con React, Node.js, SQL e integración de IA.</p>
-          <p class="hero__meta">Palencia, España</p>
+          <p class="hero__meta">Palencia, España · Remoto · Híbrido</p>
           <div class="hero__actions">
             <a class="button button--primary" href="mailto:edu84gp@gmail.com">Escríbeme</a>
             <a class="button button--secondary" href="https://www.linkedin.com/in/edu84gp/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
@@ -98,7 +122,7 @@
       <div class="container">
         <p class="eyebrow">Trabajo seleccionado</p>
         <h2 id="proyectos-titulo">Proyectos</h2>
-        <p class="section__lead">Cuatro piezas que muestran cómo construyo: producto full stack, automatización con agentes, frontend sin framework y algoritmos con accesibilidad.</p>
+        <p class="section__lead">Enseño cuatro piezas que muestran cómo construyo: producto full stack, automatización con agentes, frontend sin/con framework y algoritmos con accesibilidad. Puedes ver mis otros proyectos en mi página en GitHub</p>
 
         <div class="projects">
           <article class="project" aria-labelledby="aplika-titulo">
@@ -124,6 +148,7 @@
                   <li>Orquestador de matching con umbral configurable, reintentos y creación de candidaturas.</li>
                   <li>Generación de CV ATS, carta y email con Groq y OpenAI como respaldo, aislada del dominio.</li>
                   <li>Autenticación JWT, RBAC, OAuth de Google y LinkedIn, y rate limiting con Redis.</li>
+                  <li>Frontend con React, Vite y Tailwind.</li>
                 </ul>
               </div>
 
