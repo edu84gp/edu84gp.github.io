@@ -41,18 +41,19 @@ Actualizada el 2026-11-04.
 - En anchos de 480 px o menos se oculta el menú, que solo conserva el botón de contacto, para dejar sitio al selector de tema sin romper la cabecera.
 - El selector de tema tiene tres estados: automático, claro y oscuro. El ciclo depende del sistema. Con el sistema en claro: automático claro → oscuro → claro → automático. Con el sistema en oscuro: automático oscuro → claro → oscuro → automático. Desde automático se salta al tema contrario al del sistema; desde el tema que coincide con el sistema se vuelve a automático; desde el otro se va al tema del sistema. Se descartó un ciclo lineal claro → oscuro → automático porque no refleja la preferencia del sistema.
 - El botón muestra un medio círculo en automático, una luna en oscuro y un sol en claro. El `aria-label`, el `title` y `theme-color` se actualizan en cada paso; la región `role="status"` anuncia el cambio. El script del `<head>` fija `data-theme` y `data-theme-mode` antes del CSS para evitar el parpadeo.
-- A 720 px o menos la foto se coloca por encima del texto con `order: -1` y baja a 96 px. A 390 px la foto ocupa de 117 a 213 y el `h1` empieza en 269; los botones quedan por debajo del texto. Se descartó dejarla debajo de los botones porque separaba la identidad del titular.
+- A 720 px o menos la foto se coloca por encima del texto con `order: -1`, se centra junto con el eyebrow y el `h1`, y baja a 96 px. El lead, la meta y los botones conservan la alineación izquierda. A 390 px la foto ocupa de 117 a 213 y el `h1` empieza en 269; los botones quedan por debajo del texto. A 721 px vuelve el diseño de dos columnas y la foto a la derecha. Se descartó dejarla debajo de los botones porque separaba la identidad del titular.
 - Los cuatro enlaces de perfil, LinkedIn y GitHub en el hero y en contacto, llevan `rel="me noopener noreferrer"` para verificar la identidad desde el sitio.
 - El pie enlaza al repositorio `edu84gp/edu84gp.github.io` con el aviso oculto de pestaña nueva y conserva el enlace para volver arriba.
 - Los efectos de hover se suavizan: la foto escala 1,05 en 200 ms y la tarjeta cambia de fondo y sombra sin desplazarse. El bloque de movimiento reducido anula el `transform` de la foto.
-- Los tokens de hover se ajustan: `--surface-hover` pasa a `#f5f5f5` y `--shadow` a `rgba(198, 199, 202, 0.35)` en claro; en oscuro se mantienen `#141c2e` y `rgba(64, 85, 116, 0.35)`. El botón secundario añade un fondo `--surface` al pasar el ratón y las tarjetas de método replican el hover de las fichas de proyecto con fondo y sombra. El `transition: all` de `.practice` se limita a `background-color` y `box-shadow`.
+- Los tokens de hover se ajustan: `--surface-hover` pasa a `#f5f5f5` y `--shadow` a `rgba(198, 199, 202, 0.35)` en claro; en oscuro se mantienen `#141c2e` y `rgba(64, 85, 116, 0.35)`. El botón secundario usa `--accent-soft` de fondo, `--accent-strong` de texto y `--accent` de borde; el contraste es 5,5:1 en claro y 5,7:1 en oscuro. Las tarjetas de método replican el hover de las fichas de proyecto con fondo y sombra. El `transition: all` de `.practice` se limita a `background-color` y `box-shadow`.
 - La entradilla de Proyectos enlaza a los repositorios de GitHub con el aviso oculto de pestaña nueva.
 
 ## Comprobaciones
 
 - Lighthouse 13.6.0 móvil y escritorio: 100 en rendimiento, accesibilidad, buenas prácticas y SEO.
-- LCP de 0,9 s en móvil y 0,3 s en escritorio; CLS 0; TBT 0 ms.
-- Sin scroll horizontal en 320, 360, 390, 768 y 1440. A 390 la foto queda por encima del titular y los botones por debajo; a 768 y 1440 la foto vuelve a la columna derecha.
+- LCP de 0,9 s en móvil y 0,2 s en escritorio; CLS 0; TBT 0 ms.
+- Sin scroll horizontal en 320, 360, 390, 480, 720, 721, 768 y 1440. A 720 px o menos la foto, el eyebrow y el `h1` están centrados; a 721 px la foto vuelve a la columna derecha y el texto a la izquierda. A 390 px la foto queda por encima del titular y los botones por debajo.
+- El botón secundario muestra el tinte de acento en el hero y en contacto, en claro y en oscuro; el texto mantiene 5,5:1 y 5,7:1 de contraste.
 - Navegación con teclado y foco visible; el primer Tab enfoca «Saltar al contenido» y Enter lleva el foco a `main` (`activeElement` = `contenido`). El selector de tema muestra un contorno de 3 px.
 - Tema con el sistema en claro: automático claro → oscuro → claro → automático. Con el sistema en oscuro: automático oscuro → claro → oscuro → automático. La etiqueta, el icono, `theme-color` y la región de estado cambian en cada paso.
 - La elección manual persiste tras recargar; automático borra la clave `tema`; con automático, un cambio de `prefers-color-scheme` actualiza el tema sin recargar.
@@ -64,7 +65,5 @@ Actualizada el 2026-11-04.
 
 ## Estado
 
-- Código en el commit local `46f64b8`.
-- Sin push y sin publicación hasta que la persona apruebe la página.
-- Fleco abierto: el fondo del botón secundario en hover solo se percibe en el hero, porque la sección de contacto ya usa `--surface`. Pendiente decidir si se retira o se sustituye por un token con contraste en ambas secciones.
-- Al publicar: push a `main`, comprobar `https://edu84gp.github.io/`, actualizar el `lastmod` de `sitemap.xml` y ejecutar el Post Inspector de LinkedIn.
+- Código en el commit local `bb1a699`.
+- Publicación aprobada el 2026-11-04. El push a `main` publica la página; después se comprueba la URL, se actualiza el `lastmod` del sitemap si hace falta y se ejecuta el Post Inspector de LinkedIn.
