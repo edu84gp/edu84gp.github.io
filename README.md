@@ -4,7 +4,7 @@ Portfolio personal de Eduardo García Prieto, desarrollador Full Stack Junior.
 
 - URL: https://edu84gp.github.io/
 - Página estática en HTML, CSS y JavaScript, sin build.
-- Tema claro y oscuro automático según la preferencia del sistema.
+- Tema automático, claro y oscuro, con selector en la cabecera y preferencia guardada en `localStorage`.
 - `assets/img/`: capturas en WebP, foto, icono e imagen social.
 - `assets/css/style.css`: sistema visual completo.
 - `docs/`: documentación de trabajo, excluida de la publicación con `_config.yml`.
